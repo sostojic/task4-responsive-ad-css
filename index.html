@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: blue;
+        font-family: sans-serif;
+      }
+      body > div {
+        flex: 1;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: white;
+        background-color: red;
+      }
+      .title h1 {
+        margin: 0;
+        padding: 0;
+      }
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo-container * img {
+        max-width: 70%;
+        max-height: 70%;
+      }
+      .logo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .company {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+      }
+      .logo-html {
+        background-color: purple;
+      }
+      .logo-css {
+        background-color: green;
+      }
+      .logo-react {
+        background-color: #282d33;
+      }
+      .logo-mongo {
+        background-color: green;
+      }
+      .logo-javascript {
+        background-color: #efdc4f;
+      }
+      .logo-node {
+        background-color: white;
+      }
+      @media (min-width: 120px) and (max-width: 120px) and (min-height: 600px) and (max-height: 600px) {
+        body {
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .title {
+          font-size: 0.6rem;
+          padding: 0.8rem 0.2rem;
+        }
+        .logo-container {
+          flex-direction: column;
+        }
+        .logo {
+          width: 70px;
+          height: 70px;
+        }
+        .company {
+          padding: 0 0.5rem;
+          font-size: 0.4rem;
+        }
+        .company img {
+          float: right;
+          max-width: 50px;
+          max-height: 25px;
+        }
+      }
+      @media (min-width: 240px) and (max-width: 240px) and (min-height: 400px) and (max-height: 400px) {
+        body {
+          flex-direction: column;
+        }
+        .title {
+          display: none;
+        }
+        .logo-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .logo {
+          flex: 0 0 50%;
+          margin: -0.1rem 0;
+          height: 120px;
+        }
+        .company {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 0.4rem;
+        }
+        .company img {
+          max-width: 50px;
+          max-height: 25px;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 300px) and (min-height: 600px) and (max-height: 600px) {
+        body {
+          flex-direction: column;
+        }
+        .title {
+          font-size: 1.2rem;
+          padding: 0.8rem 0.2rem;
+        }
+        .logo-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .logo {
+          flex: 0 0 50%;
+          margin: -0.3rem 0;
+          height: 160px;
+        }
+        .company {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 0.8rem;
+        }
+        .company img {
+          margin: 1.6rem 0 0 0;
+          max-width: 50px;
+          max-height: 25px;
+        }
+      }
+      @media (min-width: 468px) and (max-width: 468px) and (min-height: 60px) and (max-height: 60px) {
+        .title {
+          font-size: 0.4rem;
+        }
+        .logo-container {
+          padding: 0 0 0 0.8rem;
+        }
+        .logo {
+          min-height: 50px;
+          min-width: 50px;
+        }
+        .logo-container * img {
+          max-height: 35px;
+          max-width: 35px;
+        }
+        .company {
+          text-align: center;
+          font-size: 0.4rem;
+        }
+        .company img {
+          float: right;
+          margin: -0.4rem 0.4rem 0 0rem;
+          max-width: 25px;
+          max-height: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="uppercase">familiar?</h1>
+    </div>
+    <div class="logo-container">
+      <div class="logo logo-html">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+        />
+      </div>
+      <div class="logo logo-css">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png"
+        />
+      </div>
+      <div class="logo logo-node">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png"
+        />
+      </div>
+      <div class="logo logo-mongo">
+        <img src="https://cdn.worldvectorlogo.com/logos/mongodb.svg" />
+      </div>
+      <div class="logo logo-react">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
+        />
+      </div>
+      <div class="logo logo-javascript">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+        />
+      </div>
+    </div>
+    <div class="company">
+      <h1 class="uppercase">join our team</h1>
+      <img src="https://www.convergent-usa.com/_nuxt/img/logo.d5d3c6a.png" />
+    </div>
+  </body>
+</html>
